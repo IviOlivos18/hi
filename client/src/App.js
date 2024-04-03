@@ -4,7 +4,6 @@ import Navbar from "./components/Navbar";
 import Inicio from "./pages/Inicio.jsx";
 import Catalogo from "./pages/Catalogo";
 import Arduino from "./pages/Arduino";
-
 import "./css/Apps.css";
 
 function App() {

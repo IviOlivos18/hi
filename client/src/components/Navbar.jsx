@@ -7,19 +7,19 @@ const navbar = () => {
     <div>
       <Navbar bg="dark" data-bs-theme="dark">
         <Container>
-          <Navbar.Brand href="#home">
+          <Navbar.Brand>
             <img
               src={image}
               alt="Hidro Crep"
               className="logo"
-              width="80"
-              height="80"
+              width="60"
+              height="60"
             />
           </Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link><Link className="nav-link" to='/'>Inicio</Link></Nav.Link>
-            <Nav.Link><Link className="nav-link" to='/Catalogo'>Catalogo</Link></Nav.Link>
-            <Nav.Link><Link className="nav-link" to='/Arduino'>Arduino</Link></Nav.Link>
+            <Nav.Link><Link className="nav-link init" to='/'>Inicio</Link></Nav.Link>
+            <Nav.Link><Link className="nav-link colage" to='/Catalogo'>Catalogo</Link></Nav.Link>
+            <Nav.Link><Link className="nav-link arduino" to='/Arduino'>Arduino</Link></Nav.Link>
           </Nav>
         </Container>
       </Navbar>

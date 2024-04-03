@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { Modal, Button, Alert, Form, Card, Navbar,Container,Nav } from "react-bootstrap";
+import { Modal, Button, Alert, Form, Card} from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
+import '../css/Catalogo.css'
 
 const Catalogo = () => {
   const [show, setShow] = useState(false);
@@ -16,7 +17,7 @@ const Catalogo = () => {
   const [imageList, setImageList] = useState([]);
 
   useEffect(() => {
-    fetch("http://192.168.1.70:9000/submot")
+    fetch("http://localhost:9000/submot")
       .then((res) => {
         if (!res.ok) {
           throw new Error("Network response was not ok");
@@ -73,7 +74,7 @@ const Catalogo = () => {
   };
 
   const enviarDatos = async (formData) => {
-    fetch("http://192.168.1.70:9000/submit", {
+    fetch("http://localhost:9000/submit", {
       method: "POST",
       body: formData,
     })
@@ -98,8 +99,6 @@ const Catalogo = () => {
               <FontAwesomeIcon icon={faDownload} /> <br/>
               Subir
       </Button>
-
-
       <form action="" method="post" encType="multipart/form-data">
         <Modal show={show} onHide={handleClose} centered>
           <Modal.Header closeButton>
@@ -117,7 +116,7 @@ const Catalogo = () => {
             )}
             Nombre De Planta:
             <br />
-            <Form.Control onChange={selectionHandler} id="nombre" type="text" />
+            <Form.Control  onChange={selectionHandler} id="nombre" type="text" />
             Nombre Científico:
             <br />
             <Form.Control id="nombre_cientifico" type="text" />
