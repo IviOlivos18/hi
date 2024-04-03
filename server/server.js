@@ -1,4 +1,3 @@
-// server.js
 const express = require("express");
 const multer = require("multer");
 const upload = multer({ dest: "uploads/" });
@@ -56,6 +55,24 @@ app.post("/submit", upload.single("show"), (req, res) => {
     });
   });
 });
+
+app.use("/submot", (req, res) => {
+  const sql = "SELECT name, name_cientific, ph, type_plant, data FROM plants";
+  connection.query(sql, (error, results) => {
+    if (error) {
+      console.error("Error al realizar la consulta:", error);
+      res.status(500).json({ message: "Error al realizar la consulta" });
+    } else {
+      const plantsWithImagePath = results.map((plant) => ({
+        ...plant,
+        imagePath: `data:image/jpeg;base64,${plant.data.toString("base64")}`,
+      }));
+
+      res.json(plantsWithImagePath);
+    }
+  });
+});
+app.use(express.static('public'));
 
 app.use((err, req, res, next) => {
   if (err instanceof multer.MulterError) {
