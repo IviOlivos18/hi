@@ -1,8 +1,23 @@
 .container-image{
-  display: flex;
+  display: block;
   width: 100%;
   padding: 10px;
 }
 .container-image img{
   height: 250px;
+}
+@media  (max-width: 300px){
+.container-image img{
+  width: 100%;
+  
+  }
+
+}
+@media screen and (min-width:301px){
+  .container-image{
+    display: flex;
+    width: 100%;
+    padding: 10%;
+  }
+
 }

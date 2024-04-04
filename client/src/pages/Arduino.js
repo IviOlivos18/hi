@@ -5,6 +5,7 @@ const Arduino = () => {
   return (
     <div>
       <div className="clocks">
+        <div className="title"><h1>Sensores:</h1></div>
         <div className="temperatura_ambiental"></div>
         <div className="presion_atmosferica"></div>
         <div className="humedad_ambiental"></div>
@@ -13,7 +14,6 @@ const Arduino = () => {
         <div className="humedad_modulo3"></div>
         <div className="nivel_agua"></div>
         <div className="nivel_agua"></div>
-        <div className="MODULOS_ABIERTO?"></div>
       </div>
     </div>
   );

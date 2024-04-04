@@ -17,7 +17,7 @@ const Catalogo = () => {
   const [imageList, setImageList] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:9000/submot")
+    fetch("http://192.168.1.15:9000/submot")
       .then((res) => {
         if (!res.ok) {
           throw new Error("Network response was not ok");
@@ -74,7 +74,7 @@ const Catalogo = () => {
   };
 
   const enviarDatos = async (formData) => {
-    fetch("http://localhost:9000/submit", {
+    fetch("http://192.168.1.15:9000/submit", {
       method: "POST",
       body: formData,
     })
@@ -144,8 +144,10 @@ const Catalogo = () => {
         </Modal>
       </form>
       <div className="container-image" style={{ paddingTop: 10 }}>
+        {/*Lily te dejo esto por si lo quieres checar:
+        https://react-bootstrap.netlify.app/docs/components/cards*/}
         {imageList.map((image) => (
-          <Card key={image.name} style={{ marginLeft: "10px" }}>
+          <Card key={image.name} style={{marginLeft: "10px" }}>
             <Card.Img
               variant="top"
               src={image.imagePath}
