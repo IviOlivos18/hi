@@ -1,0 +1,124 @@
+.plant1-2-icon {
+  height: 84px;
+  width: 84px;
+  position: relative;
+  object-fit: cover;
+}
+.gardena {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 600;
+  font-family: inherit;
+  display: inline-block;
+  min-width: 128px;
+  white-space: nowrap;
+}
+.logo-74 {
+  width: 217px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.vector-icon {
+  width: 38px;
+  height: 31px;
+  position: relative;
+}
+.inicio {
+  align-self: stretch;
+  position: relative;
+  letter-spacing: -0.44px;
+  display: inline-block;
+  min-width: 46px;
+}
+.icon-home {
+  width: 46px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-7xs);
+  text-align: center;
+}
+.vector-icon1 {
+  width: 25px;
+  height: 33px;
+  position: relative;
+}
+.catalogo,
+.icon-book {
+  display: flex;
+  align-items: center;
+}
+.catalogo {
+  height: 20px;
+  position: relative;
+  letter-spacing: -0.44px;
+  flex-shrink: 0;
+  min-width: 82px;
+}
+.icon-book {
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--gap-7xs);
+  cursor: pointer;
+}
+.vector-icon2 {
+  width: 34px;
+  height: 31px;
+  position: relative;
+}
+.arduino {
+  position: relative;
+  letter-spacing: -0.44px;
+  display: inline-block;
+  min-width: 70px;
+}
+.arduino-page,
+.nav-bar,
+.pages {
+  display: flex;
+  align-items: center;
+}
+.arduino-page {
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--gap-3xs);
+}
+.nav-bar,
+.pages {
+  flex-direction: row;
+  max-width: 100%;
+}
+.pages {
+  width: 392px;
+  overflow: hidden;
+  flex-shrink: 0;
+  justify-content: flex-start;
+  gap: var(--gap-78xl);
+  font-size: var(--font-size-xl);
+  font-family: var(--font-quicksand);
+}
+.nav-bar {
+  width: 100%; 
+  padding: 30px;
+  justify-content: space-between;
+  top: 0;
+  z-index: 99;
+  position: absolute;
+  gap: var(--gap-xl);
+  text-align: center;
+  font-size: var(--font-size-9xl);
+  color: var(--color-white);
+  font-family: var(--font-poppins);
+  margin: 0;
+}
+@media screen and (max-width: 450px) {
+  .pages {
+    gap: var(--gap-29xl);
+  }
+}

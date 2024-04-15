@@ -1,10 +1,9 @@
 import React from "react";
-import image from "../images/logo.png";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHouse,faBook,faMicrochip } from "@fortawesome/free-solid-svg-icons";
-import './Navbar.css'
+import './Nav.css'
 
 const navbar = () => {
   return (
@@ -12,13 +11,7 @@ const navbar = () => {
       <Navbar bg="dark" data-bs-theme="dark">
         <Container>
           <Navbar.Brand>
-            <img
-              src={image}
-              alt="Hidro Crep"
-              className="logo"
-              width="60"
-              height="60"
-            />
+            
           </Navbar.Brand>
           
         </Container>

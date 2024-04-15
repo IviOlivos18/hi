@@ -19,5 +19,23 @@
     width: 100%;
     padding: 10%;
   }
-
+}
+.collage{
+  background: linear-gradient(180deg, #133e18, #0f2912);
+  height: 100vh;
+  padding-top: 120px;
+}
+.frame{
+  width: 100%;
+  margin: 0 auto;
+  width: 1200px;
+  border-radius: 29.75px;
+  background-color: var(--color-gray-100);
+  border: 1px solid var(--color-seagreen-200);
+  box-sizing: border-box;
+  flex-direction: column;
+  padding: var(--padding-34xl-2) var(--padding-17xl) var(--padding-34xl-2)
+    var(--padding-19xl-2);
+  gap: var(--gap-73xl-2);
+  justify-content: right;
 }

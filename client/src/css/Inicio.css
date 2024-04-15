@@ -5,6 +5,8 @@
   padding: 0%;
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
-
-
+}
+.init{
+  background: linear-gradient(180deg, #133e18, #0f2912);
+  height: 100vh;
 }
