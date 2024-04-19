@@ -1,4 +1,4 @@
-import React from "react";
+import React,{ useState, useEffect } from "react";
 import Water from "../components/Sensores/Water.js"
 import BarRed from "../components/Sensores/BarRed.js"
 import BarWhite from "../components/Sensores/BarWhite.js"
@@ -8,6 +8,20 @@ import Icon from "../components/Sensores/Icon.js"
 import "../css/Arduino.css";
 
 const Arduino = () => {
+  const [arduinoValue, setArduinoValue] = useState(0);
+
+  // Esta función simula la obtención de datos de Arduino y actualiza el valor
+  const getArduinoValue = () => {
+    // Lógica para obtener el valor de Arduino
+    const newValue = 40;
+    setArduinoValue(newValue);
+  };
+
+  // Llama a getArduinoValue cada segundo para actualizar el valor
+  useEffect(() => {
+    const interval = setInterval(getArduinoValue, 1000);
+    return () => clearInterval(interval);
+  }, []);
   return (
       <div className="style-2">
       <div className="frame-parent">
@@ -24,7 +38,7 @@ const Arduino = () => {
                 </div>
                 <div className="vector-group">
                   <div className="vector-icon4">
-                    <BarRed/>
+                    <BarRed value={arduinoValue} />
                   </div>
                   <div className="wrapper">
                     <div className="div">%</div>

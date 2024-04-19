@@ -10,12 +10,12 @@ const NavBar = () => {
       <div className="logo-74">
           <img
               src={image}
-              alt="Hidro Crep"
+              alt="Hidro Crop"
               className="logo"
               width="60"
               height="60"
             />
-        <h3 className="hidrocrep">Hidro Crep</h3>
+        <h3 className="hidrocrep">Hidro Crop</h3>
       </div>
       <div className="pages">
         <div className="icon-home">

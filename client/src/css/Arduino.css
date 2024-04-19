@@ -334,7 +334,7 @@
   flex-direction: column;
   justify-content: flex-start;
   padding: var(--padding-34xl-2) var(--padding-17xl) var(--padding-34xl-2)
-    var(--padding-19xl-2);
+    var(--padding-19xl-2) ;
   gap: var(--gap-73xl-2);
 }
 .style-2-inner {
@@ -446,11 +446,14 @@
 .frame-parent {
   width: 100%;
   max-width: 1028.4px;
-  margin: 0 auto;
+  margin: 0 auto;   
 }
 .frame-parent{
   color: white;
 }
 .vector-icon4{
   position: absolute;
+}
+.sensor-de-humedad{
+  
 }
