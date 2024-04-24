@@ -1,5 +1,6 @@
 import React from "react";
 import "../css/Inicio.css";
+import Spline from '@splinetool/react-spline'
 
 const Inicio = () => {
   return( 
@@ -13,7 +14,6 @@ const Inicio = () => {
         </div>
       </section>
       <section className="slider">
-        
       </section>
     </div>
     
