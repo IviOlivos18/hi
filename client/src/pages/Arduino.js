@@ -9,10 +9,9 @@ import "../css/Arduino.css";
 
 const Arduino = () => {
   const [arduinoValue, setArduinoValue] = useState(0);
-
-  // Esta función simula la obtención de datos de Arduino y actualiza el valor
+  
   const getArduinoValue = () => {
-    // Lógica para obtener el valor de Arduino
+    
     const newValue = 40;
     setArduinoValue(newValue);
   };
@@ -23,7 +22,7 @@ const Arduino = () => {
     return () => clearInterval(interval);
   }, []);
   return (
-      <div className="style-2">
+    <div className="style-2">
       <div className="frame-parent">
         <div className="actividad-sensorial-wrapper">
           <div className="actividad-sensorial">Actividad Sensorial:</div>
@@ -34,7 +33,7 @@ const Arduino = () => {
             <div className="sensor-de-humedad-inner">
               <div className="vector-parent">
                 <div className="vector-icon3">
-                  <Reloj1/>
+                  <Reloj1 progress={70} />
                 </div>
                 <div className="vector-group">
                   <div className="vector-icon4">
@@ -71,18 +70,18 @@ const Arduino = () => {
                 <div className="humedad">Humedad</div>
               </div>
               <div className="icon">
-                <Icon/>
+                <Icon />
               </div>
               <div className="frame-div">
                 <div className="value-parent">
                   <div className="value">50</div>
                   <div className="subtract-icon">
-                    <BarWhite/>
+                    <BarWhite />
                   </div>
                 </div>
-                    {/*substract-1 */}
+                {/*substract-1 */}
                 <div className="subtract-icon1">
-                  <Reloj2/>
+                  <Reloj2 />
                 </div>
                 <div className="frame-item" />
               </div>

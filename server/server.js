@@ -41,7 +41,7 @@ app.post("/submit", upload.single("show"), (req, res) => {
     const { name, name_cientific, type_plant, ph } = req.body;
     const fileData = data;
 
-    const sql = "INSERT INTO plants (name, name_cientific, data, ph, type_plant) VALUES (?, ?, ?, ?, ?)";
+    const sql = "INSERT INTO plantas (name, name_cientific, data, ph, type_plant) VALUES (?, ?, ?, ?, ?)";
     const values = [name, name_cientific, fileData, ph, type_plant];
 
     connection.query(sql, values, (error, results) => {
@@ -57,7 +57,7 @@ app.post("/submit", upload.single("show"), (req, res) => {
 });
 
 app.use("/submot", (req, res) => {
-  const sql = "SELECT name, name_cientific, ph, type_plant, data FROM plants";
+  const sql = "SELECT name, name_cientific, ph, type_plant, data FROM * plants";
   connection.query(sql, (error, results) => {
     if (error) {
       console.error("Error al realizar la consulta:", error);
@@ -72,6 +72,13 @@ app.use("/submot", (req, res) => {
     }
   });
 });
+
+app.post("/esp32", (req, res) => {
+  const { pin, value } = req.body;
+  console.log("Datos recibidos del ESP32 - Pin:", pin, "Valor:", value);
+  res.status(200).json({ message: "Datos recibidos correctamente" }); 
+});
+
 app.use(express.static('public'));
 
 app.use((err, req, res, next) => {
