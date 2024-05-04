@@ -22,6 +22,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  text-align: center;
 }
 .vector-icon {
   width: 38px;
@@ -121,4 +122,7 @@
   .pages {
     gap: var(--gap-29xl);
   }
+}
+.hidrocrep{
+  padding-top: 10px;
 }

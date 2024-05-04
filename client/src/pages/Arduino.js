@@ -29,7 +29,11 @@ const Arduino = () => {
         </div>
         <div className="sensor-de-humedad-parent">
           <div className="sensor-de-humedad">
-            <div className="humedad-ambiental">Humedad Ambiental</div>
+            <div className="humedad-ambiental">
+              <div className="texto-temhumedad">
+                Temperatura Ambiental
+              </div>
+            </div>
             <div className="sensor-de-humedad-inner">
               <div className="vector-parent">
                 <div className="vector-icon3">

@@ -1,9 +1,9 @@
 .actividad-sensorial {
   position: relative;
   line-height: 127%;
-  color: white;
   font-size: 40px;
 }
+
 .actividad-sensorial-wrapper {
   align-self: stretch;
   display: flex;
@@ -11,10 +11,12 @@
   align-items: flex-start;
   justify-content: center;
 }
+
 .humedad-ambiental {
   position: relative;
   font-weight: 600;
 }
+
 .vector-icon3,
 .vector-icon4 {
   position: absolute;
@@ -24,15 +26,17 @@
   width: 100%;
   height: 100%;
 }
+
 .vector-icon4 {
   margin: 0 !important;
   right: 0;
   bottom: 0;
   max-width: 100%;
-  overflow: hidden;
+  overflow: visible;
   max-height: 100%;
   z-index: 1;
 }
+
 .div {
   position: relative;
   line-height: 57px;
@@ -41,6 +45,7 @@
   min-width: 18px;
   z-index: 2;
 }
+
 .wrapper {
   align-self: stretch;
   display: flex;
@@ -48,16 +53,18 @@
   align-items: flex-start;
   justify-content: flex-end;
 }
+
 .b {
   position: relative;
   font-size: var(--font-size-37xl-8);
   line-height: 57px;
   display: inline-block;
-  color: white;
+  color: var(--color-white);
   min-width: 70px;
   z-index: 2;
   margin-top: -38.2px;
 }
+
 .vector-group {
   position: absolute;
   top: 0;
@@ -67,15 +74,16 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-end;
-  padding: var(--padding-31xl-7) var(--padding-12xl) var(--padding-9xs-6)
-    var(--padding-33xl-3);
+  padding: var(--padding-31xl-7) var(--padding-12xl) var(--padding-9xs-6) var(--padding-33xl-3);
   box-sizing: border-box;
 }
+
 .vector-parent {
   height: 130.1px;
   flex: 1;
   position: relative;
 }
+
 .sensor-de-humedad-inner {
   align-self: stretch;
   display: flex;
@@ -84,8 +92,9 @@
   justify-content: flex-start;
   padding: 0 var(--padding-22xl);
   font-size: var(--font-size-xl-3);
-  color: rgb(47, 255, 144);
+  color: var(--color-mediumspringgreen-100);
 }
+
 .actualizado {
   width: 117px;
   position: relative;
@@ -94,12 +103,14 @@
   display: inline-block;
   min-width: 117px;
 }
+
 .actualizado-wrapper,
 .sensor-de-humedad {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
 }
+
 .actualizado-wrapper {
   align-self: stretch;
   flex-direction: row;
@@ -107,6 +118,7 @@
   text-align: center;
   font-size: var(--font-size-xl-7);
 }
+
 .sensor-de-humedad {
   flex: 0.952;
   border-radius: 32.72px;
@@ -114,14 +126,14 @@
   border: 1px solid var(--color-seagreen-100);
   box-sizing: border-box;
   flex-direction: column;
-  padding: var(--padding-27xl-8) var(--padding-2xs) var(--padding-27xl-7)
-    var(--padding-smi-8);
+  padding: 22px var(--padding-2xs) 22px var(--padding-smi-8);
   gap: var(--gap-13xl-8);
   min-width: 223px;
-  text-align: left;
+  text-align: center;
   font-size: var(--font-size-8xl-5);
   font-family: var(--font-inter);
 }
+
 .nivel-de-agua {
   width: 192px;
   position: relative;
@@ -130,6 +142,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .nivel-de-agua-wrapper {
   align-self: stretch;
   display: flex;
@@ -138,19 +151,21 @@
   justify-content: flex-start;
   padding: 0 var(--padding-smi);
 }
+
 .frame-child {
   width: 218.4px;
   height: 218.4px;
   position: relative;
 }
+
 .b1 {
   position: relative;
   line-height: 40px;
   display: inline-block;
   min-width: 49px;
   flex-shrink: 0;
-  debug_commit: f6aba90;
 }
+
 .container {
   flex: 1;
   display: flex;
@@ -161,6 +176,7 @@
   box-sizing: border-box;
   min-width: 31px;
 }
+
 .div1 {
   position: relative;
   font-size: var(--font-size-sm);
@@ -170,13 +186,14 @@
   display: inline-block;
   min-width: 12px;
   flex-shrink: 0;
-  debug_commit: f6aba90;
 }
+
 .frame-container {
   flex: 1;
   flex-direction: row;
   row-gap: 20px;
 }
+
 .frame-container,
 .frame-group,
 .frame-wrapper {
@@ -184,6 +201,7 @@
   align-items: flex-start;
   justify-content: flex-start;
 }
+
 .frame-wrapper {
   align-self: stretch;
   flex-direction: row;
@@ -192,6 +210,7 @@
   font-size: var(--font-size-20xl-3);
   font-family: var(--font-inter);
 }
+
 .frame-group {
   flex: 0.7676;
   border-radius: 39.81px;
@@ -203,11 +222,13 @@
   gap: var(--gap-3xs-9);
   min-width: 223px;
 }
+
 .humedad {
   width: 140px;
   position: relative;
   display: inline-block;
 }
+
 .humedad-wrapper {
   align-self: stretch;
   display: flex;
@@ -216,6 +237,7 @@
   justify-content: flex-start;
   padding: 0 var(--padding-13xl) 0 var(--padding-12xl-9);
 }
+
 .icon {
   width: 36.4px;
   height: 58.2px;
@@ -224,6 +246,7 @@
   bottom: 19.9px;
   left: 124.4px;
 }
+
 .value {
   height: 95px;
   width: 105.6px;
@@ -232,6 +255,7 @@
   display: inline-block;
   min-width: 105.6px;
 }
+
 .subtract-icon {
   height: 176.2px;
   width: 91.7px;
@@ -241,6 +265,7 @@
   left: -49.7px;
   z-index: 2;
 }
+
 .value-parent {
   align-self: stretch;
   display: flex;
@@ -249,11 +274,13 @@
   justify-content: flex-start;
   position: relative;
 }
+
 .frame-item,
 .subtract-icon1 {
   position: absolute;
   margin: 0 !important;
 }
+
 .subtract-icon1 {
   width: 100%;
   height: 100%;
@@ -265,6 +292,7 @@
   flex-shrink: 0;
   z-index: 1;
 }
+
 .frame-item {
   width: 19.4px;
   height: 19.4px;
@@ -274,6 +302,7 @@
   background-color: var(--color-white);
   z-index: 2;
 }
+
 .frame-div,
 .widget {
   display: flex;
@@ -282,25 +311,27 @@
   justify-content: flex-start;
   position: relative;
 }
+
 .frame-div {
   align-self: stretch;
-  padding: var(--padding-31xl-7) var(--padding-29xl-6) var(--padding-12xl-6)
-    var(--padding-30xl-7);
+  padding: var(--padding-31xl-7) var(--padding-29xl-6) var(--padding-12xl-6) var(--padding-30xl-7);
   font-size: var(--font-size-61xl-1);
 }
+
 .widget {
   flex: 1;
   border-radius: 26.42px;
-  padding: var(--padding-lgi-8) var(--padding-22xl) var(--padding-27xl-5)
-    var(--padding-21xl-7);
+  padding: var(--padding-lgi-8) var(--padding-22xl) var(--padding-27xl-5) var(--padding-21xl-7);
   gap: var(--gap-21xl-6);
 }
+
 .sensor-de-humedad-parent,
 .widget-wrapper {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
 }
+
 .widget-wrapper {
   flex: 1;
   border-radius: 32.72px;
@@ -308,10 +339,10 @@
   border: 1px solid var(--color-seagreen-100);
   box-sizing: border-box;
   justify-content: flex-start;
-  padding: var(--padding-2xs-7) var(--padding-9xs) var(--padding-2xs-6)
-    var(--padding-6xs-1);
+  padding: var(--padding-2xs-7) var(--padding-9xs) var(--padding-2xs-6) var(--padding-6xs-1);
   min-width: 223px;
 }
+
 .sensor-de-humedad-parent {
   align-self: stretch;
   justify-content: center;
@@ -319,13 +350,16 @@
   text-align: center;
   font-size: var(--font-size-8xl-8);
 }
+
 .frame-parent,
 .style-2-inner {
   display: flex;
   align-items: flex-start;
   max-width: 100%;
 }
+
 .frame-parent {
+  margin-top: 60px;
   width: 1028.4px;
   border-radius: 29.75px;
   background-color: var(--color-gray-100);
@@ -333,10 +367,10 @@
   box-sizing: border-box;
   flex-direction: column;
   justify-content: flex-start;
-  padding: var(--padding-34xl-2) var(--padding-17xl) var(--padding-34xl-2)
-    var(--padding-19xl-2) ;
-  gap: var(--gap-73xl-2);
+  padding: var(--padding-34xl-2) var(--padding-17xl) var(--padding-34xl-2) var(--padding-19xl-2);
+  gap: 50px;
 }
+
 .style-2-inner {
   width: 1196px;
   flex-direction: row;
@@ -346,29 +380,36 @@
   color: var(--color-white);
   font-family: var(--font-poppins);
 }
+
 @media screen and (max-width: 1050px) {
   .actividad-sensorial {
     font-size: var(--font-size-32xl);
     line-height: 65px;
   }
+
   .b {
     font-size: var(--font-size-26xl);
     line-height: 45px;
   }
+
   .b1 {
     font-size: var(--font-size-12xl);
     line-height: 31px;
   }
+
   .value {
     font-size: var(--font-size-21xl);
   }
+
   .sensor-de-humedad-parent {
     flex-wrap: wrap;
   }
+
   .frame-parent {
     gap: var(--gap-27xl);
   }
 }
+
 @media screen and (max-width: 750px) {
   .frame-parent {
     gap: var(--gap-4xl);
@@ -377,83 +418,85 @@
     box-sizing: border-box;
   }
 }
+
 @media screen and (max-width: 450px) {
   .actividad-sensorial {
     font-size: var(--font-size-19xl);
     line-height: 48px;
   }
+
   .humedad-ambiental {
     font-size: var(--font-size-3xl);
   }
+
   .div {
     font-size: var(--font-size-base);
     line-height: 45px;
   }
+
   .b {
     font-size: var(--font-size-15xl);
     line-height: 34px;
   }
+
   .actualizado {
     font-size: var(--font-size-mid);
     line-height: 19px;
   }
+
   .actualizado-wrapper {
     padding-left: var(--padding-xl);
     padding-right: var(--padding-xl);
     box-sizing: border-box;
   }
+
   .sensor-de-humedad {
     gap: var(--gap-base);
     flex: 1;
   }
+
   .nivel-de-agua {
     font-size: var(--font-size-3xl);
     line-height: 28px;
   }
+
   .b1 {
     font-size: var(--font-size-5xl);
     line-height: 24px;
   }
+
   .div1 {
     width: 100%;
     height: 12px;
   }
+
   .frame-container {
     flex-wrap: wrap;
   }
+
   .frame-group {
     flex: 1;
   }
+
   .humedad {
     font-size: var(--font-size-3xl);
   }
+
   .value {
     font-size: var(--font-size-5xl);
   }
+
   .widget {
     gap: var(--gap-xl);
   }
 }
 .style-2 {
-  background: linear-gradient(180deg, #133e18, #0f2912);
-  padding-top: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  height: 100vh;
-}
-.frame-parent {
-  width: 100%;
-  max-width: 1028.4px;
-  margin: 0 auto;   
-}
-.frame-parent{
   color: white;
-}
-.vector-icon4{
-  position: absolute;
-}
-.sensor-de-humedad{
-  
+    background: linear-gradient(180deg, #133e18, #0f2912);
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: grid;
+    align-items: center;
+    justify-content: center;
 }
